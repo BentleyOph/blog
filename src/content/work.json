@@ -1,9 +1,17 @@
 [
   {
     "id": 1,
-    "duration": "2024 - present",
-    "company": "Astro Community",
-    "title": "Astro Theme",
-    "description": "Existing as an Astro theme for anyone to use."
+    "duration": "July '24 -  Jan '25 ",
+    "company": "Twiga Foods",
+    "title": "Data Analyst",
+    "description": "Automated data pipelines and dashboards using Python, Bigquery, and Dash to enhance data-driven decision-making processes."
+  },
+  {
+    "id": 2,
+    "duration": "Dec '24 - Jan '25",
+    "company": "Simpleasy Inc",
+    "title": "SWE Intern",
+    "description": "Designed and developed MVPs at light speed"
   }
+
 ]

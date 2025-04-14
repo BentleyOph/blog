@@ -8,9 +8,11 @@ import spectre from './package/src';
 import node from '@astrojs/node';
 import { spectreDark } from './src/ec-theme';
 
+import netlify from '@astrojs/netlify';
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://bentleyoph.netlify.app',
+  site: 'https://bentleyoph.netlify.app/',
   output: 'static',
   integrations: [
     expressiveCode({
@@ -19,15 +21,17 @@ export default defineConfig({
     mdx(),
     sitemap(),
     spectre({
-      name: 'Spectre',
+      
+      name: 'Bentley',
+      themeColor:`#ffffff`,
       openGraph: {
         home: {
-          title: 'Spectre',
-          description: 'A minimalistic theme for Astro.'
+          title: 'Bentley',
+          description: 'My little garden on this part of the internet.',
         },
         blog: {
           title: 'Blog',
-          description: 'News and guides for Spectre.'
+          description: 'What i put out into the world.',
         },
         projects: {
           title: 'Projects'
@@ -46,7 +50,5 @@ export default defineConfig({
       }
     })
   ],
-  adapter: node({
-    mode: 'standalone'
-  })
+  adapter: netlify()
 });
