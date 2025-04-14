@@ -10,7 +10,7 @@ import { spectreDark } from './src/ec-theme';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://bentleyoph.netlify.com',
+  site: 'https://bentleyoph.netlify.app',
   output: 'static',
   integrations: [
     expressiveCode({
