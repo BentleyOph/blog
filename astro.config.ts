@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import expressiveCode from 'astro-expressive-code';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
+import pagefind from 'astro-pagefind';
 import spectre from './package/src';
 
 import node from '@astrojs/node';
@@ -20,6 +21,7 @@ export default defineConfig({
     }),
     mdx(),
     sitemap(),
+    pagefind(),
     spectre({
       
       name: 'Bentley',
@@ -37,17 +39,6 @@ export default defineConfig({
           title: 'Projects'
         }
       },
-      giscus: {
-        repository: 'louisescher/spectre',
-        repositoryId: 'R_kgDONjm3ig',
-        category: 'General',
-        categoryId: 'DIC_kwDONjm3is4ClmBF',
-        mapping: 'pathname',
-        strict: true,
-        reactionsEnabled: true,
-        emitMetadata: false,
-        lang: 'en',
-      }
     })
   ],
   adapter: netlify()

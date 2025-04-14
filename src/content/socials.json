@@ -5,7 +5,16 @@
       "type": "lucide",
       "name": "github"
     },
-    "text": "GitHub",
+    "text": "Git",
     "link": "https://github.com/BentleyOph"
+  },
+  {
+    "id": 2,
+    "icon": {
+      "type": "lucide",
+      "name": "twitter"
+    },
+    "text": "X",
+    "link": "https://twitter.com/BentleyPhO"
   }
 ]
