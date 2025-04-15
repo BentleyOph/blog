@@ -3,10 +3,8 @@ import { defineConfig } from 'astro/config';
 import expressiveCode from 'astro-expressive-code';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import pagefind from 'astro-pagefind';
 import spectre from './package/src';
 
-import node from '@astrojs/node';
 import { spectreDark } from './src/ec-theme';
 
 import netlify from '@astrojs/netlify';
