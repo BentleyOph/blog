@@ -14,13 +14,14 @@ import netlify from '@astrojs/netlify';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://bentleyoph.netlify.app/',
+  output: 'static',
   integrations: [
     expressiveCode({
       themes: [spectreDark],
     }),
     mdx(),
     sitemap(),
-    pagefind(),
+    // pagefind(),
     spectre({
       
       name: 'Bentley',
@@ -40,4 +41,5 @@ export default defineConfig({
       },
     })
   ],
+  adapter: netlify()
 });
